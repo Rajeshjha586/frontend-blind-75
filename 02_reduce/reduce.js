@@ -22,4 +22,4 @@ Array.prototype.myReduce = function (callbackFn, initialValue) {
   return accumulator;
 };
 
-console.log([1, 2, 3, , , , , , 5].myReduce((prev, curr) => prev + curr, 9));
+// console.log([1, 2, 3, , , , , , 5].myReduce((prev, curr) => prev + curr, 9));
