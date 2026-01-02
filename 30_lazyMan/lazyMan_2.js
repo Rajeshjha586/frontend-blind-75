@@ -24,8 +24,8 @@ function LazyMan(name, callback) {
   };
   Promise.resolve().then(exec);
   async function exec() {
-    for (const [cmd, val] of tasks) {
-      await actions[cmd](val);
+    for (const [task, val] of tasks) {
+      await actions[task](val);
     }
   }
   return {
