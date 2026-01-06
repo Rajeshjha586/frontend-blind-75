@@ -94,7 +94,7 @@ class MyURLSearchParams {
     this.paramMap.set(name, [String(value)]);
   }
 
-  // sor all key/value pairs based on the keys
+  // sort all key/value pairs based on the keys
   sort() {
     const sortedEntries = [...this.paramMap].sort((a, b) =>
       a[0] < b[0] ? -1 : 1
